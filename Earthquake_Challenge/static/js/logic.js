@@ -150,7 +150,7 @@ d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/
      
     // Creating tectonic style for line color and width 
     let tectonicLines = {
-        color: rgb(255, 255, 255),
+        color: "#FF8C00",
         weight: 2
     }
 
