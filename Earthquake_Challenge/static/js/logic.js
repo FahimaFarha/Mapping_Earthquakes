@@ -135,7 +135,7 @@ legend.onAdd = function() {
 ];
 // Looping through our intervals to generate a label with a colored square for each interval.
 for (var i = 0; i < magnitudes.length; i++) {
-    div.innerHTML +=
+      div.innerHTML +=
       "<i style='background: " + colors[i] + "'></i> " +
       magnitudes[i] + (magnitudes[i + 1] ? "&ndash;" + magnitudes[i + 1] + "<br>" : "+");
  }
@@ -150,7 +150,7 @@ d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/
      
     // Creating tectonic style for line color and width 
     let tectonicLines = {
-        color: "red",
+        color: rgb(255, 255, 255),
         weight: 2
     }
 
@@ -166,6 +166,5 @@ d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/
       }).addTo(tectonic);
 
     // we add the tectonic layer to our map so it's shown at launch
-    tectonic.addTo(map);
-  
+    tectonic.addTo(map);  
 });
